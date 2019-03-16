@@ -1,6 +1,4 @@
 def using_push(array, string)
-  array = ["Benin", "Carpe Verde", "Gambia", "Liberia", "Mali"]
-  string = "Niger"
   array.push(string)
 end
 
