@@ -15,8 +15,8 @@ def using_pop(array)
 end
 
 def pop_with_args(array)
-  chars_in_game_of_thrones = ["Danny T.", "Tyrion Lannister", "Stable Boy", "Sandor Clegane"]
-  chars_arya_killed = chars_in_game_of_thrones.pop(2) #why is this not returning 2, as this is returning the last two elements that were poped off, thus the array must have 2 remaining?
+  array = [1, 2, 3, 4]
+  array.pop(2) 
 end
 
 def using_shift(array)
