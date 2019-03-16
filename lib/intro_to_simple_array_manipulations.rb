@@ -19,11 +19,7 @@ def pop_with_args(array)
 end
 
 def using_shift(array)
-    my_favorite_cities = ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
-    im_so_over_this_city = my_favorite_cities.shift
-
-    my_favorite_cities #why is this not returning 7, I used shift on the array.
-    im_so_over_this_city
+    array.shift
 end
 
 def shift_with_args(array)
