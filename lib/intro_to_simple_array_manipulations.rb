@@ -1,28 +1,30 @@
 def using_push(array, string)
-  countries_in_western_africa = ["Benin", "Carpe Verde", "Gambia", "Liberia", "Mali"]
-  next_country = "Niger"
-  countries_in_western_africa.push(next_country)
+  array = ["Benin", "Carpe Verde", "Gambia", "Liberia", "Mali"]
+  string = "Niger"
+  array.push(string)
 end
 
 def using_unshift(array, string)
   neighborhoods_in_northwest_brooklyn = ["Brooklyn Yards", "Cadman Plaza", "Clinton Hill", "Downtown Brooklyn", "DUMBO"]
-  @new_neighborhood = "Brooklyn Heights"
-  @updated_array = neighborhoods_in_northwest_brooklyn.unshift(new_neighborhood)
+  new_neighborhood = "Brooklyn Heights"
+  updated_array = neighborhoods_in_northwest_brooklyn.unshift(new_neighborhood)
 end
 
 def using_pop(array)
-  great_hits_of_the_nineties = ["Baby One More Time", "Smells Like Teen Spirit", "Missing", "Walking On The Sun", "Hard Knock Life", "Losing My Religion"]
-  deleted_string = great_hits_of_the_nineties.pop
+	array.pop
 end
 
 def pop_with_args(array)
   chars_in_game_of_thrones = ["Danny T.", "Tyrion Lannister", "Stable Boy", "Sandor Clegane"]
-  chars_arya_killed = chars_in_game_of_thrones.pop(2)
+  chars_arya_killed = chars_in_game_of_thrones.pop(2) #why is this not returning 2, as this is returning the last two elements that were poped off, thus the array must have 2 remaining?
 end
 
 def using_shift(array)
     my_favorite_cities = ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
     im_so_over_this_city = my_favorite_cities.shift
+
+    my_favorite_cities #why is this not returning 7, I used shift on the array.
+    im_so_over_this_city
 end
 
 def shift_with_args(array)
@@ -33,7 +35,8 @@ end
 def using_concat(array1, array2)
   my_favorite_things = ["raindrops on roses", "whiskers on kittens"]
   more_favs = ["mario kart", "flatiron school"]
-  all_my_favs = my_favorite_things.concat more_favs
+  all_my_favs=my_favorite_things.concat more_favs
+
 end
 
 def using_insert(array, element)
